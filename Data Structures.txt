@@ -1,0 +1,10 @@
+So firstly, the Data Structures used.
+
+Each number, from 1 to 9, should have a list of "possible places" to go to, per row, per column, per block.
+
+We thus need boolean arrays as follows.
+row[][][]:= row[n][i][j] states whether the number 'n' can go to the 'j'th' place (column) in the 'i'th' row.
+col[][][]:= col[n][i][j] states whether the number 'n' can go to the 'j'th' place (row) in the 'i'th'column.
+block[][][]:= block[n][i][j] states whether the number 'n' can go to the 'j'th' place in the 'i'th' block. Here, the blocks are numbered 1 to 9 in row-major order, and within each block, the places are numbered 1 to 9.
+
+The algorithm aims to modify all three arrays interweavingly in an iterative manner, so as to "mimic" a human solving. Another important aim of the solver is to OUTPUT the LOGIC that the algorithm used. The above two things would need a little formalizing, but thats about it.

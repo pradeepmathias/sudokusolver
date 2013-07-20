@@ -1,0 +1,17 @@
+User - System interaction.
+
+Console asks user for input.
+Input Format:
+9 lines, each describing the sudoku.
+Each line consists of 9 characters: [1-9|' '].
+
+System provides the following information back to the user:
+0) Possible case of bad input.
+1) Sequential steps of reasoning for each deduction.
+2) Final output sudoku: either of the solved form, or an incomplete form stating "could not solve completely with the given arsenal of tricks".
+
+Before input, system stores in all row[][][], col[][][], block[][][], the values "true" (i.e. we assume that any  number can go anywhere). After input, for each value inputted, we reassign boolean values in row[][][], col[][][], block[][][] based on input.
+
+Finally, we run the algorithm(s).
+
+
